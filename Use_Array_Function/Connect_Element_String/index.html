@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Connect element in a string </h2>
+<p id="result"></p>
+</body>
+<script>
+    let n = +prompt("Input the number of the element ")
+    let str = new Array();
+    for (let i = 0; i < n; i++) {
+        let value = +prompt("Input element ")
+        str.push(value)
+    }
+    let toString = str.toString();
+    let join1 = str.join(" ")
+    let join2 = str.join("+")
+    document.getElementById("result").innerHTML = toString + "<br>" + join1 + "<br>" + join2
+</script>
+</html>
