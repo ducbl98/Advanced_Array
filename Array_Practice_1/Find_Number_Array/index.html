@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find Number M In Array</title>
+</head>
+<body>
+</body>
+<script>
+    let n = +prompt("Input the number element ")
+    let numbers = new Array()
+    let check = false
+    for (let i = 0; i < n; i++) {
+        numbers.push(+prompt("Input number "))
+    }
+    let m = +prompt("Input M ")
+    for (let i = 0; i < numbers.length; i++) {
+        if (m === numbers[i]) {
+            check = true;
+            break;
+        }
+    }
+    if (check) {
+        alert(m + " is found")
+    } else {
+        alert(m + " is not found ")
+    }
+</script>
+</html>

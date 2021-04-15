@@ -8,11 +8,20 @@
 </body>
 <script>
     let numbers = new Array();
+    let index = new Array();
     let n = +prompt("Input the number element ")
     for (let i = 0; i < n; i++) {
         numbers.push(+prompt("Input number "))
     }
     for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] < 0) {
+            index.push(i);
+        }
     }
+    document.write("There are " + index.length + " negative number in array <br>")
+    for (let index1 of index) {
+        document.write(numbers[index1] + "<br>")
+    }
+
 </script>
 </html>

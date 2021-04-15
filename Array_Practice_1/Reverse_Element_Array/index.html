@@ -8,10 +8,14 @@
 </body>
 <script>
     let numbers = new Array();
+    let reverse = new Array()
     let n = +prompt("Input the number element ")
     for (let i = 0; i < n; i++) {
         numbers.push(+prompt("Input number "))
     }
-    alert("The initial array is " + numbers + "  The reverse array is " + numbers.reverse())
+    for (let i = 0; i < numbers.length; i++) {
+        reverse.push(numbers[numbers.length-i-1])
+    }
+    alert("The initial array is " + numbers + "  The reverse array is " + reverse)
 </script>
 </html>
