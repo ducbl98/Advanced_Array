@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let numbers = [0, -1, -5, -7, 8, 9, 10, 14, 15, -32, 11, 14, 65, -43, -54, -9]
+    let index = new Array()
+    let count = 0
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] >= 10) {
+            count++;
+            index.push(i);
+        }
+    }
+    document.write("There are " + index.length + " number satisfies condition <br>")
+    for (let index1 of index) {
+        document.write(numbers[index1] + "<br>")
+    }
+</script>
+</html>

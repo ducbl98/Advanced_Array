@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let numbers=new Array()
+    for (let i = 0; i <10 ; i++) {
+        numbers.push(+prompt("Input number "))
+    }
+    let max=0
+    for (let i = 0; i < numbers.length; i++) {
+        if(max<numbers[i]){
+            max=numbers[i];
+        }
+    }
+    alert("The Max Number is "+max+" at index "+ numbers.indexOf(max) )
+</script>
+</html>
